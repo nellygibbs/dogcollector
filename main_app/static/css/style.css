@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* make the footer sticky */
+main {
+    flex-grow: 1;
+}
+
+/* supposed to center the footer */
+footer {
+    padding-top: 0;
+    text-align: right;
+}
