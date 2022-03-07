@@ -1,7 +1,8 @@
+from sre_constants import SUCCESS
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Dog
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
        
 # Create your views here.
 def home(request):
@@ -23,3 +24,13 @@ class DogCreate(CreateView):
     model = Dog
     # provides all the fields for this model
     fields = '__all__'
+
+class DogUpdate(UpdateView):
+    model = Dog
+    fields = ('name', 'breed', 'description', 'age')
+
+
+class DogDelete(DeleteView):
+    model = Dog
+    success_url = '/dogs/'
+
