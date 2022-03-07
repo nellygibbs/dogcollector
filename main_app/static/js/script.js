@@ -1,7 +1,10 @@
 console.log(M)
-// Date Picker Animations
-const dateEl = document.getElementById('id_date');
 
+// Variables
+const dateEl = document.getElementById('id_date');
+const selectEl = document.getElementById('id_meal');
+
+// Date Picker Animations
 M.Datepicker.init(dateEl, {
     format: 'yyyy-mm-dd',
     defaultDate: new Date(),
@@ -10,6 +13,4 @@ M.Datepicker.init(dateEl, {
 });
 
 // Select Widget Animations
-const selectEl = document.getElementById('id_meal');
-
 M.FormSelect.init(selectEl);
