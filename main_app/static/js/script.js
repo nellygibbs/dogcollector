@@ -8,3 +8,8 @@ M.Datepicker.init(dateEl, {
     setDefaultDate: true,
     autoClose: true
 });
+
+// Select Widget Animations
+const selectEl = document.getElementById('id_meal');
+
+M.FormSelect.init(selectEl);
